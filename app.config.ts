@@ -1,17 +1,13 @@
 export const AppConfig = {
   host: process.env.GITHUB_PAGES_ORIGIN as string, // or Custom Domain
-  defaultLocale: 'en',
+  defaultLocale: "en",
   locales: [
     {
-      id: 'en',
-      label: 'English',
-    },
-    {
-      id: 'ja',
-      label: 'Japanese',
+      id: "en",
+      label: "English",
     },
   ],
-  defaultTheme: 'system', // 'light' | 'dark' | 'system'
+  defaultTheme: "system", // 'light' | 'dark' | 'system'
 
   // Please set the features you want to hide to false.
   toolbar: {
@@ -21,4 +17,4 @@ export const AppConfig = {
   },
 } as const;
 
-export type LocaleId = (typeof AppConfig)['locales'][number]['id'];
+export type LocaleId = (typeof AppConfig)["locales"][number]["id"];

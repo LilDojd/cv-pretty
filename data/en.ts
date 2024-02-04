@@ -1,129 +1,254 @@
-import { getAssetPath } from '@/app/lib/utils';
-import { Data } from '@/types/data';
-import { SiGithub, SiX } from '@icons-pack/react-simple-icons';
-import { Calendar, Mail, Send } from 'lucide-react';
+import { getAssetPath } from "@/app/lib/utils";
+import { Data } from "@/types/data";
+import { SiGithub, SiLinkedin } from "@icons-pack/react-simple-icons";
+import { PhoneIcon } from "lucide-react";
+import { Calendar, Mail, Send } from "lucide-react";
+import { VSBGLogo, InSilicoMedicineLogo } from "@/images/logos";
 
 const data: Data = {
-  name: 'Taro Yamada',
+  name: "Georgiy Andreev",
   lastUpdatedAt: new Date(),
   status: {
-    color: 'active',
-    label: 'Available',
+    color: "blocked",
+    label: "Not Available",
   },
-  location: 'Seattle, WA',
-  bio: 'App Developer',
+  location: "Abu Dhabi, UAE, GMT+4",
+  locationLink: "https://www.google.com/maps/place/Abu+Dhabi",
+  bio: "Computational Biologist and Software Engineer",
   summary:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum unde, ducimus iusto ipsum repudiandae reprehenderit adipisci obcaecati quia consequuntur rem velit ab itaque saepe! Amet deserunt illo in nesciunt!',
-  avatarUrl: getAssetPath() + '/locale/en/profile.webp',
-  skills: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-  education: [
+    "I have a proven track record of participating in research projects in Structural Biology and Computational Chemistry with global collaborators. My experiences have deepened my understanding of the community's need for responsive, robust, and scalable scientific software, a challenge I have enthusiastically met as Lead Developer for Alchemistry in Chemistry42. Currently, I work primarily with Python and C++. I do scientific illustrations and renders. I love proteins and small molecules; I want to believe the feeling is mutual",
+  avatarUrl: getAssetPath() + "/locale/en/avatar.jpg",
+  languages: [
     {
-      school: 'Aurora Global University',
-      degree: `Master's in Environmental Science`,
-      start: '2019',
-      end: '2021',
+      type: "spoken",
+      name: "English",
+      proficiency: 5,
     },
     {
-      school: 'Nova Arts and Technology College',
-      degree: `Bachelor's in Digital Media Design`,
-      start: '2014',
-      end: '2018',
+      type: "spoken",
+      name: "Russian",
+      proficiency: 5,
+    },
+    {
+      type: "spoken",
+      name: "Chinese",
+      proficiency: 3,
+    },
+    {
+      type: "spoken",
+      name: "Georgian",
+      proficiency: 2,
+    },
+    {
+      type: "programming",
+      name: "Python",
+      proficiency: 5,
+    },
+    {
+      type: "programming",
+      name: "Rust",
+      proficiency: 4,
+    },
+    {
+      type: "programming",
+      name: "C++",
+      proficiency: 3,
+    },
+    {
+      type: "programming",
+      name: "JS/TS",
+      proficiency: 2,
+    },
+  ],
+  skills: [
+    {
+      type: "bio",
+      stack: [
+        "Molecular Modeling",
+        "Refinement",
+        "Docking",
+        "Bioinformatics",
+        "MM/QM/ML Biosimulations",
+        "Enhanced Sampling",
+        "Drug Design",
+        "Chemoinformatics",
+      ],
+    },
+    {
+      type: "ml",
+      stack: [
+        "Generative Models",
+        "Graph Neural Networks",
+        "Geometric Deep Learning",
+        "Active Learning",
+        "Predictive Models",
+        "MLOps",
+      ],
+    },
+    {
+      type: "dev",
+      stack: [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "Version Control",
+        "CI/CD",
+        "Graph Databases",
+        "NoSQL",
+        "Product Lifecycle",
+      ],
+    },
+    {
+      type: "visualization",
+      stack: [
+        "Seaborn",
+        "Plotly",
+        "Dash",
+        "PyMOL",
+        "Mol*",
+        "VIAMD",
+        "ChimeraX",
+        "NGLView",
+        "Blender",
+      ],
+    },
+    {
+      type: "soft",
+      stack: [
+        "Problem Solving",
+        "Presentation",
+        "Teamwork",
+        "Adaptability",
+        "Communication",
+      ],
+    },
+  ],
+  education: [
+    {
+      school: "Lomonosov Moscow State University",
+      degree: "Master's degree in Bioengineering and Bioinformatics",
+      start: "2017",
+      end: "2023",
     },
   ],
   work: [
     {
-      company: 'BlueTech Co., Ltd.',
-      link: 'https://wmda.info',
-      badges: ['Remote'],
-      title: 'Lead Software Engineer',
-      start: '2020',
-      end: 'Present',
+      company: ">VSBG",
+      link: "https://vsb.fbb.msu.ru/",
+      badges: ["Lab"],
+      title: "Student → Alumni",
+      logo: VSBGLogo,
+      start: "2019",
+      end: "2023 ",
       description:
-        'Leading a team to develop new cloud-based solutions. Building efficient workflows and designing and implementing scalable applications using AWS. Technologies: Python, Django, React, AWS',
+        "I developed computational methods for rational enzyme design under Dr. Golovin A.V.'s guidance. I also created hybrid molecular mechanics and machine-learning methods for protein-ligand binding affinity estimation and guided generative modeling of binders",
     },
     {
-      company: 'Green Data Co., Ltd.',
-      link: 'https://wmda.info',
-      badges: ['Remote'],
-      title: 'Data Scientist',
-      start: '2018',
-      end: '2020',
-      description: `Contributing to the development of analytical tools that leverage big data to aid decision-making. Utilizing machine learning and data visualization to foster clients' business growth. Technologies: Python, R, SQL, Tableau`,
+      company: "InSilico Medicine",
+      link: "https://insilico.com/",
+      badges: ["Research", "Drug Discovery"],
+      title: "Structural Biologist",
+      logo: InSilicoMedicineLogo,
+      start: "2020",
+      end: "2023",
+      description:
+        "Took part in developing ISM001-055, a first-in-class small molecule inhibitor for treating IPF (Phase 2).  I supported two internal drug discovery projects and three external collaborations by providing valuable insights into the mechanisms of action of small molecules and their interactions. Additionally, I developed a platform to track the results of internal ADMET assays",
     },
     {
-      company: 'Cybersecurity Solutions',
-      link: 'https://wmda.info',
-      badges: [],
-      title: 'Senior Security Engineer',
-      start: '2017',
-      end: '2018',
+      company: "InSilico Medicine",
+      link: "https://insilico.com/",
+      badges: ["Development"],
+      title: "Alchemistry Lead Developer",
+      logo: InSilicoMedicineLogo,
+      start: "2023",
+      end: "Current",
       description:
-        'Developing and implementing strategies to strengthen corporate cybersecurity. Involved in the development of cutting-edge threat detection tools to secure client data. Technologies: Java, Python, Linux, Network Security',
+        "Delivered Alchemistry, a physics-based Hit-to-Lead optimization and Prioritization platform based on binding free energy calculations. It achieves state-of-the-art accuracy of 1.5 kcal/mol across a wide range of targets, at a fraction of the cost of traditional methods. The platform is integrated into Chemistry42 SaaS, which is used for designing internal preclinical candidates, as well as by several biospharmaceutical companies",
     },
   ],
   contacts: [
     {
-      label: 'example@example.com',
-      href: 'mailto:example@example.com',
+      label: "Mail me",
+      href: "mailto:yawner@pm.me",
       icon: Mail,
       toolbar: true,
     },
     {
-      label: 'Send DM',
-      href: 'https://twitter.com/WMDA_office',
-      icon: SiX,
+      label: "Call me",
+      href: "tel:+971501169750",
+      icon: PhoneIcon,
+    },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/georgiy-andreev",
+      icon: SiLinkedin,
+    },
+    {
+      label: "Setup a meeting",
+      href: "https://cal.com/yawner",
+      icon: Calendar,
       toolbar: true,
     },
     {
-      label: 'Meeting',
-      href: 'https://cal.com',
-      icon: Calendar,
+      label: "Telegram",
+      href: "https://t.me/LouisBuilyon",
+      icon: Send,
+      toolbar: true,
     },
     {
-      label: 'Form',
-      href: 'https://tally.so',
-      icon: Send,
+      label: "GitHub",
+      href: "https://github.com/LilDojd",
+      icon: SiGithub,
     },
   ],
   projects: [
     {
-      title: 'EcoTrack',
-      techStack: [
-        'Side Project',
-        'JavaScript',
-        'React',
-        'Node.js',
-        'MongoDB',
-        'REST API',
-      ],
+      title: "Alchemistry",
+      techStack: ["OpenMM", "RDKit", "PyTorch", "ray", "Neo4j"],
       description:
-        'An environmental impact tracking app for individuals and small businesses',
+        "SOTA Alchemical free energy calculations for drug discovery",
       link: {
-        label: 'ecotrack.app',
-        href: 'https://wmda.info',
+        label: "insilico.com/chemistry42",
+        href: "https://insilico.com/chemistry42",
       },
     },
     {
-      title: 'CodeCollab',
-      techStack: ['Side Project', 'Python', 'Flask', 'WebSocket', 'Docker'],
+      title: "ISM001-055",
+      techStack: ["GROMACS", "AMBER", "Plumed", "MOE", "DFTB+"],
       description:
-        'A real-time collaborative coding platform for remote pair programming',
+        "AI-discovered drug now in Phase 2 clinical trials for IPF. A team I was part of has played a significant role in reaching this milestone",
       link: {
-        label: 'codecollab.io',
-        href: 'https://wmda.info',
+        label: "clinicaltrials.gov/study/NCT05938920",
+        href: "https://www.clinicaltrials.gov/study/NCT05938920",
       },
     },
-  ],
-  links: [
     {
-      label: 'XXX',
-      href: 'https://twitter.com/WMDA_office',
-      icon: SiGithub,
+      title: "Result Tracker",
+      techStack: ["Plotly/Dash", "React", "Node.js"],
+      description:
+        "An internal dashboard for tracking, visualizing, and analyzing the results of ADMET assays",
     },
     {
-      label: 'XXX',
-      href: 'https://twitter.com/WMDA_office',
-      icon: SiX,
+      title: "Colabind",
+      techStack: ["GROMACS", "xtb", "JAX", "Martini Force Field", "MDAnalysis"],
+      description:
+        "A Cloud-based approach for prediction of binding sites with CG cosolvent simulations",
+      link: {
+        label: "github.com/porekhov/CG_probeM",
+        href: "https://github.com/porekhov/CG_probeMD",
+      },
+    },
+    {
+      title: "NN-Enhanced ABFE",
+      techStack: ["OpenMM-Torch", "PyTorch", "Plumed", "RDKit"],
+      description:
+        "A hybrid ML/MM approach for binding free energy calculations with ANI2x neural network potentials",
+    },
+    {
+      title: "CNNs for Enzymes",
+      techStack: ["GROMACS", "TensorFlow", "Rosetta"],
+      description:
+        "Exploratory research project on the applicability of CNNs for enzyme activity prediction",
     },
   ],
 };

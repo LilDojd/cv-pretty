@@ -1,4 +1,4 @@
-import { cn } from '@/app/lib/utils';
+import { cn } from "@/app/lib/utils";
 
 export default function Section({
   title,
@@ -12,8 +12,8 @@ export default function Section({
   return (
     <section
       className={cn(
-        'flex min-h-0 flex-col gap-y-3',
-        avoidPageBreak && 'print:break-inside-avoid'
+        "flex min-h-0 flex-col gap-y-3",
+        avoidPageBreak && "print:break-inside-avoid",
       )}
     >
       <h2 className="text-xl font-bold">{title}</h2>

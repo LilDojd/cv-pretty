@@ -4,9 +4,8 @@ import {
   CardContent,
   CardDescription,
   CardTitle,
-} from './ui/card';
-import { Badge } from './ui/badge';
-import { ArrowUpRight } from 'lucide-react';
+} from "./ui/card";
+import { Badge } from "./ui/badge";
 
 interface Props {
   title: string;
@@ -20,7 +19,7 @@ interface Props {
 
 export function ProjectCard({ title, description, techStack, link }: Props) {
   return (
-    <Card className="print:shadow-none flex flex-col">
+    <Card className="border-muted flex flex-col rounded-lg border p-3 print:shadow-none">
       <CardHeader className="pb-3">
         <div className="space-y-1">
           <CardTitle className="text-base">
@@ -30,7 +29,8 @@ export function ProjectCard({ title, description, techStack, link }: Props) {
                 target="_blank"
                 className="inline-flex items-center gap-1 hover:underline"
               >
-                {title} <ArrowUpRight className="print:hidden" size={14} />
+                {title}{" "}
+                <span className="size-1 rounded-full bg-green-500 print:hidden"></span>
               </a>
             ) : (
               title
@@ -39,9 +39,9 @@ export function ProjectCard({ title, description, techStack, link }: Props) {
           {link && (
             <div className="hidden pb-2 text-sm underline print:block">
               {link?.href
-                .replace('https://', '')
-                .replace('www.', '')
-                .replace('/', '')}
+                .replace("https://", "")
+                .replace("www.", "")
+                .replace("/", "")}
             </div>
           )}
           <CardDescription className="text-sm">{description}</CardDescription>
@@ -51,7 +51,7 @@ export function ProjectCard({ title, description, techStack, link }: Props) {
         <CardContent className="mt-auto flex">
           <div className="mt-2 flex flex-wrap gap-1">
             {techStack.map((stack) => (
-              <Badge variant="outline" key={stack}>
+              <Badge variant="secondary" key={stack}>
                 {stack}
               </Badge>
             ))}

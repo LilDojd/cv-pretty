@@ -1,5 +1,5 @@
-import { IconType } from '@icons-pack/react-simple-icons';
-import { LucideIcon } from 'lucide-react';
+import { IconType } from "@icons-pack/react-simple-icons";
+import { Languages, LucideIcon } from "lucide-react";
 
 export type Project = {
   title: string;
@@ -22,6 +22,7 @@ export type Work = {
   company: string;
   link?: string;
   badges: string[];
+  logo?: string;
   title: string;
   start: string;
   end: string;
@@ -42,8 +43,19 @@ export type Link = {
 };
 
 export type Status = {
-  color: 'active' | 'disabled' | 'pending' | 'blocked';
+  color: "active" | "disabled" | "pending" | "blocked";
   label: string;
+};
+
+export type Languages = {
+  type: "spoken" | "programming";
+  name: string;
+  proficiency: 0 | 1 | 2 | 3 | 4 | 5;
+};
+
+export type Skills = {
+  type: string;
+  stack: string[];
 };
 
 export type Data = {
@@ -52,13 +64,14 @@ export type Data = {
   lastUpdatedAt: Date;
   status: Status | null;
   location: string;
+  locationLink?: string;
   bio: string;
   summary: string;
   avatarUrl: string;
-  skills: string[];
+  languages: Languages[];
+  skills: Skills[];
   education: Education[];
   work: Work[];
   contacts: Contact[];
   projects: Project[];
-  links: Link[];
 };
