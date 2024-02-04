@@ -14,7 +14,7 @@ const data: Data = {
   },
   location: "Abu Dhabi, UAE, GMT+4",
   locationLink: "https://www.google.com/maps/place/Abu+Dhabi",
-  bio: "Computational Biologist and Software Engineer",
+  bio: "CompChem/StructBio/Software Engineer",
   summary:
     "I have a proven track record of participating in research projects in Structural Biology and Computational Chemistry with global collaborators. My experiences have deepened my understanding of the community's need for responsive, robust, and scalable scientific software, a challenge I have enthusiastically met as Lead Developer for Alchemistry in Chemistry42. Currently, I work primarily with Python and C++. I do scientific illustrations and renders. I love proteins and small molecules; I want to believe the feeling is mutual",
   avatarUrl: getAssetPath() + "/locale/en/avatar.jpg",

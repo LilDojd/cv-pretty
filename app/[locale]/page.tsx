@@ -23,7 +23,7 @@ export default async function Home({
   const data = getData();
 
   return (
-    <main className="container mb-6 max-w-2xl space-y-8 px-10 pb-16 pt-10 sm:py-16 print:mb-0 print:py-6">
+    <main className="max-w-3.5xl container mb-6 space-y-8 px-10 pb-16 pt-10 sm:py-16 print:mb-0 print:py-6">
       <section>
         <p className="text-muted-foreground mb-4 text-right text-sm italic">
           <time>{format(new Date(data.lastUpdatedAt), "yyyy-MM-dd")}</time>
@@ -204,7 +204,7 @@ export default async function Home({
         </div>
       </Section>
 
-      <Section title={t("projects")}>
+      <Section title={t("projects")} avoidPageBreak>
         <div className="overflow-hidden">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {data.projects.map((project) => (

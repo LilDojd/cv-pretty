@@ -19,7 +19,7 @@ interface Props {
 
 export function ProjectCard({ title, description, techStack, link }: Props) {
   return (
-    <Card className="border-muted flex flex-col rounded-lg border p-3 print:shadow-none">
+    <Card className="border-muted flex flex-col rounded-lg border p-3 shadow-sm print:shadow-none">
       <CardHeader className="pb-3">
         <div className="space-y-1">
           <CardTitle className="text-base">
@@ -44,7 +44,9 @@ export function ProjectCard({ title, description, techStack, link }: Props) {
                 .replace("/", "")}
             </div>
           )}
-          <CardDescription className="text-sm">{description}</CardDescription>
+          <CardDescription className="font-mono text-sm">
+            {description}
+          </CardDescription>
         </div>
       </CardHeader>
       {techStack.length > 0 && (

@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      maxWidth: {
+        "3.5xl": "52rem",
+      },
       fontSize: {
         base: "0.9375rem",
       },
