@@ -1,5 +1,5 @@
 import { Data } from "@/types/data";
-import { Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const data: Data = {
   name: "",
@@ -12,6 +12,7 @@ const data: Data = {
   bio: "",
   summary: "",
   avatarUrl: "",
+  languages: [],
   skills: [],
   education: [
     {
@@ -73,13 +74,6 @@ const data: Data = {
         label: "",
         href: "",
       },
-    },
-  ],
-  links: [
-    {
-      label: "",
-      href: "",
-      icon: Github,
     },
   ],
 };
