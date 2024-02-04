@@ -194,7 +194,7 @@ export default async function Home({
               return (
                 <Badge
                   key={`${skill.type}-${technology}`}
-                  className={`${hoverColorClass} text-secondary-foreground dark:text-primary-foreground ${colorClass}`}
+                  className={`${hoverColorClass} print:text-secondary-foreground text-secondary-foreground dark:text-primary-foreground ${colorClass}`}
                 >
                   {technology}
                 </Badge>
