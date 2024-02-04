@@ -13,7 +13,7 @@ export const AppConfig = {
   toolbar: {
     print: true,
     theme: true,
-    locale: true,
+    locale: false,
   },
 } as const;
 
