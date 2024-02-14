@@ -204,7 +204,14 @@ const data: Data = {
   projects: [
     {
       title: "Alchemistry",
-      techStack: ["OpenMM", "RDKit", "PyTorch", "ray", "Neo4j"],
+      techStack: [
+        "OpenMM",
+        "RDKit",
+        "OpenFF-toolkit",
+        "PyTorch",
+        "ray",
+        "Neo4j",
+      ],
       description:
         "SOTA Alchemical free energy calculations for drug discovery",
       link: {
@@ -221,6 +228,12 @@ const data: Data = {
         label: "clinicaltrials.gov/study/NCT05938920",
         href: "https://www.clinicaltrials.gov/study/NCT05938920",
       },
+    },
+    {
+      title: "Generative Hit-Opt with Alchemistry",
+      techStack: ["PyG", "OpenMM", "OpenFF-toolkit"],
+      description:
+        "My thesis project, a diffusion-based generative model for small molecule design with a focus on optimizing binding affinity in an Active Learning Cycle",
     },
     {
       title: "Result Tracker",
