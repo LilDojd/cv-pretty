@@ -93,7 +93,7 @@ const data: Data = {
         "AWS",
         "Version Control",
         "CI/CD",
-        "Graph Databases",
+        "Neo4j",
         "NoSQL",
         "Product Lifecycle",
       ],
