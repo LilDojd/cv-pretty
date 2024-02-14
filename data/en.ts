@@ -150,7 +150,7 @@ const data: Data = {
       title: "Structural Biologist",
       logo: InSilicoMedicineLogo,
       start: "2020",
-      end: "2023",
+      end: "2022",
       description:
         "Took part in developing ISM001-055, a first-in-class small molecule inhibitor for treating IPF (Phase 2).  I supported two internal drug discovery projects and three external collaborations by providing valuable insights into the mechanisms of action of small molecules and their interactions. Additionally, I developed a platform to track the results of internal ADMET assays",
     },
@@ -160,7 +160,7 @@ const data: Data = {
       badges: ["Development"],
       title: "Alchemistry Lead Developer",
       logo: InSilicoMedicineLogo,
-      start: "2023",
+      start: "2022",
       end: "Current",
       description:
         "Delivered Alchemistry, a physics-based Hit-to-Lead optimization and Prioritization platform based on binding free energy calculations. It achieves state-of-the-art accuracy of 1.5 kcal/mol across a wide range of targets, at a fraction of the cost of traditional methods. The platform is integrated into Chemistry42 SaaS, which is used for designing internal preclinical candidates, as well as by several biospharmaceutical companies",
