@@ -115,7 +115,7 @@ const data: Data = {
     {
       type: "soft",
       stack: [
-        "Problem Solving",
+        "Problem-Solving",
         "Presentation",
         "Teamwork",
         "Adaptability",
@@ -163,7 +163,7 @@ const data: Data = {
       start: "2022",
       end: "Current",
       description:
-        "Delivered Alchemistry, a physics-based Hit-to-Lead optimization and Prioritization platform based on binding free energy calculations. It achieves state-of-the-art accuracy of 1.5 kcal/mol across a wide range of targets, at a fraction of the cost of traditional methods. The platform is integrated into Chemistry42 SaaS, which is used for designing internal preclinical candidates, as well as by several biospharmaceutical companies",
+        "Delivered Alchemistry, a physics-based Hit-to-Lead optimization and Prioritization platform based on binding free energy calculations. It achieves state-of-the-art accuracy of 1.5 kcal/mol across a wide range of targets at a fraction of the cost of traditional methods. The platform is integrated into Chemistry42 SaaS, which is used for designing internal preclinical candidates, as well as by several biopharmaceutical companies",
     },
   ],
   contacts: [
