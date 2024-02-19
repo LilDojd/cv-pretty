@@ -267,7 +267,7 @@ const data: Data = {
   references: [
     {
       name: "Prof. Dr. Andrey V. Golovin",
-      title: ">VSBG Principal Investigator",
+      title: "Principal Investigator",
       company: "MSU",
       contact: "golovin.andrey@gmail.com",
       description: "My supervisor at the >VSBG lab",
