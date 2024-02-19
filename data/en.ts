@@ -9,7 +9,7 @@ const data: Data = {
   name: "Georgiy Andreev",
   lastUpdatedAt: new Date(),
   status: {
-    color: "pending",
+    color: "active",
     label: "Free to chat",
   },
   location: "Abu Dhabi, UAE, GMT+4",
