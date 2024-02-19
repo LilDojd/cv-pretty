@@ -5,6 +5,7 @@ export default {
   languages: "Languages",
   skills: "Skills",
   projects: "Projects",
+  references: "References",
   contacts: "Contacts and Links",
   links: "Links",
   print: "Print",

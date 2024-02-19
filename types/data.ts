@@ -18,6 +18,14 @@ export type Education = {
   end: string;
 };
 
+export type Reference = {
+  name: string;
+  title: string;
+  contact: string;
+  company: string;
+  description: string;
+};
+
 export type Work = {
   company: string;
   link?: string;
@@ -74,4 +82,5 @@ export type Data = {
   work: Work[];
   contacts: Contact[];
   projects: Project[];
+  references: Reference[];
 };

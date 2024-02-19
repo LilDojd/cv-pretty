@@ -264,6 +264,22 @@ const data: Data = {
         "Exploratory research project on the applicability of CNNs for enzyme activity prediction",
     },
   ],
+  references: [
+    {
+      name: "Prof. Dr. Andrey V. Golovin",
+      title: ">VSBG Principal Investigator",
+      company: "Lomonosov Moscow State University",
+      contact: "golovin.andrey@gmail.com",
+      description: "My supervisor at the >VSBG lab",
+    },
+    {
+      name: "Vladimir Aladinskiy",
+      title: "Head of Computational Chemistry",
+      company: "InSilico Medicine",
+      contact: "vladimir@insilicomedicine.com",
+      description: "My direct manager at InSilico Medicine",
+    },
+  ],
 };
 
 export default data;

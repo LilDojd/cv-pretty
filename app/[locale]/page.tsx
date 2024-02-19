@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/app/components/project-card";
+import { ReferenceCard } from "../components/reference-card";
 import Section from "@/app/components/section";
 import ToolBar from "@/app/components/toolbar";
 import LanguageBadge from "@/app/components/ui/language-badge";
@@ -211,6 +212,14 @@ export default async function Home({
               <ProjectCard key={project.title} {...project} />
             ))}
           </div>
+        </div>
+      </Section>
+
+      <Section title={t("references")} avoidPageBreak>
+        <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {data.references.map((reference) => (
+            <ReferenceCard key={reference.name} {...reference} />
+          ))}
         </div>
       </Section>
 
