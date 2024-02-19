@@ -268,7 +268,7 @@ const data: Data = {
     {
       name: "Prof. Dr. Andrey V. Golovin",
       title: ">VSBG Principal Investigator",
-      company: "Lomonosov Moscow State University",
+      company: "MSU",
       contact: "golovin.andrey@gmail.com",
       description: "My supervisor at the >VSBG lab",
     },
