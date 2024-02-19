@@ -76,6 +76,15 @@ const data: Data = {
       },
     },
   ],
+  references: [
+    {
+      name: "",
+      title: "",
+      contact: "",
+      company: "",
+      description: "",
+    },
+  ],
 };
 
 export default data;
