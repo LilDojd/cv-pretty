@@ -9,8 +9,8 @@ const data: Data = {
   name: "Georgiy Andreev",
   lastUpdatedAt: new Date(),
   status: {
-    color: "blocked",
-    label: "Not Available",
+    color: "pending",
+    label: "Free to chat",
   },
   location: "Abu Dhabi, UAE, GMT+4",
   locationLink: "https://www.google.com/maps/place/Abu+Dhabi",
@@ -160,7 +160,7 @@ const data: Data = {
       badges: ["Development"],
       title: "Alchemistry Lead Developer",
       logo: InSilicoMedicineLogo,
-      start: "2022",
+      start: "2020",
       end: "Current",
       description:
         "Delivered Alchemistry, a physics-based Hit-to-Lead optimization and Prioritization platform based on binding free energy calculations. It achieves state-of-the-art accuracy of 1.5 kcal/mol across a wide range of targets at a fraction of the cost of traditional methods. The platform is integrated into Chemistry42 SaaS, which is used for designing internal preclinical candidates, as well as by several biopharmaceutical companies",
