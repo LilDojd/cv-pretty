@@ -247,8 +247,8 @@ const data: Data = {
       description:
         "A Cloud-based approach for prediction of binding sites with CG cosolvent simulations",
       link: {
-        label: "github.com/porekhov/CG_probeM",
-        href: "https://github.com/porekhov/CG_probeMD",
+        label: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07853",
+        href: "https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07853",
       },
     },
     {
