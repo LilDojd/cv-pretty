@@ -136,7 +136,7 @@ const data: Data = {
       company: ">VSBG",
       link: "https://vsb.fbb.msu.ru/",
       badges: ["Lab"],
-      title: "Student → Alumni",
+      title: "Student → Alumnus",
       logo: VSBGLogo,
       start: "2019",
       end: "2023 ",
