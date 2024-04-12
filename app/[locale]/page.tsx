@@ -205,7 +205,7 @@ export default async function Home({
         </div>
       </Section>
 
-      <Section title={t("projects")} avoidPageBreak>
+      <Section title={t("projects")}>
         <div className="overflow-hidden">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {data.projects.map((project) => (
@@ -223,7 +223,7 @@ export default async function Home({
         </div>
       </Section>
 
-      <Section title={t("contacts")} avoidPageBreak>
+      <Section title={t("contacts")}>
         <div className="flex flex-wrap gap-2">
           {data.contacts.map((contact) => (
             <Button size="sm" key={contact.href} variant="secondary" asChild>
