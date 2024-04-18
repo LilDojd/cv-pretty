@@ -7,7 +7,7 @@ export type Project = {
   description: string;
   link?: {
     label: string;
-    href: string;
+    href: any;
   };
 };
 

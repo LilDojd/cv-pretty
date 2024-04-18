@@ -252,6 +252,16 @@ const data: Data = {
       },
     },
     {
+      title: "YoungFace - Winners of LongHack 2022",
+      techStack: ["GROMACS", "MOE", "Generative Diffusion"],
+      description:
+        "In a span of few weeks we have developed a foundation pipeline for identifying sking-aging related targets and generating natural-like hits",
+      link: {
+        label: "Take a look at our slides",
+        href: `assets/pdfs/youngface.pdf`,
+      },
+    },
+    {
       title: "NN-Enhanced ABFE",
       techStack: ["OpenMM-Torch", "PyTorch", "Plumed", "RDKit"],
       description:
